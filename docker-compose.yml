@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  movies:
+    image: jay:movie
+    ports:
+      - "81:80"
+  train:
+    image: jay:train
+    ports:
+      - "82:80"
+  dth:
+    image: jay:dth
+    ports:
+      - "83:80"
+  recharge:
+    image: jay:recharge
+    ports:
+      - "84:80"
