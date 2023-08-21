@@ -1,26 +1,26 @@
 version: '3.8'
 services:
   movies:
-    image: jay:movie
+    image: jagadish00/newmovie:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
   train:
-    image: jay:train
+    image: jagadish00/newtrain:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
 
   dth:
-    image: jay:dth
+    image: jagadish00/newdth:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
   recharge:
-    image: jay:recharge
+    image: jagadish00/newrecharge:latest
     ports:
       - "84:80"
     deploy:
