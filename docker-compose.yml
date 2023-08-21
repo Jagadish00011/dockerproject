@@ -8,7 +8,7 @@ services:
       replicas: 3
   train:
     image: jagadish00/newtrain:latest
-    ports:
+    ports: 
       - "82:80"
     deploy:
       replicas: 3
